@@ -1,0 +1,57 @@
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-field:hover {
+    border-color: #6C63FF; /* Change border color on hover */
+  }
+  
+  .submit-button {
+    background-color: #6C63FF;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect */
+    position: absolute;
+    bottom: 120px;
+    right: 440px;
+  }
+  
+  .submit-button:hover {
+    background-color: #5248DB; /* Darker background color on hover */
+  }
+  
+  .success-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    animation: slideIn 0.5s ease-in-out forwards; /* Add slide-in animation */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,95 @@
+/* src/Cards.css */
+.cards-container {
+    display: flex;
+    height: 100vh;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark gray text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .image-container {
+    flex: 3; /* 4/5ths of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-image {
+    height: 90%; /* Adjust the width as needed */
+     /* Maximum width for the image */
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .right-container {
+    flex: 1; /* 1/5th of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left */
+    padding-right: 20px;
+    text-align: left; /* Ensure text is left-aligned */
+  }
+  
+ 
+  .right-images {
+    display: flex;
+    flex-direction: column; /* Change from 'space-between' to 'column' */
+    align-items: center; /* Align items to the center */
+   /* margin-top: 1px;     */
+  }
+  
+  .right-image {
+    height: 100%; /* Adjust the width as needed */
+    max-height: 190px; /* Maximum width for the image */
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Add margin between images */
+  }
+
+  .image-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4ca1af; /* Teal color */
+    margin-bottom: 10px;
+  }
+  
+  .additional-text {
+    font-size: 1rem;
+    color: #666; /* Dark gray for additional text */
+  }
+  
+  .custom-hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #4ca1af, #ffcc00); /* Gradient color */
+    margin: 20px 0;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-hr:focus {
+    outline: none;
+    background: linear-gradient(to right, #ffcc00, #4ca1af); /* Reverse gradient on focus */
+  }
+
+  .monospace-text {
+    font-family: 'Lucida Console', Monaco; /* Monospace font family with Lucida Console */
+    font-size: 1.0rem; /* Decrease font size for smaller screens */
+    color: #333; /* Dark gray text color */
+    margin-top: 2px;
+    padding-left: 50px; /* Decrease left padding for smaller screens */
+    padding-right: 40px; /* Decrease right padding for smaller screens */
+    line-height: 1.6;
+}
+
+/* Media query for adjusting styles on smaller screens */
+@media (max-width: 768px) {
+    .monospace-text {
+        font-size: 0.7rem; /* Further decrease font size for even smaller screens */
+        padding-left: 10px; /* Further decrease left padding */
+        padding-right: 10px; /* Further decrease right padding */
+    }
+}

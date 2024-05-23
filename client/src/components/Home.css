@@ -1,0 +1,17 @@
+/* src/CenteredText.css */
+.centered-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #333, #4ca1af); /* Matching dark gray and teal gradient */
+  }
+  
+  .centered-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    font-size: 4rem; /* Large font size */
+    color: #ffcc00; /* Gold text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+    margin: 0; /* Remove default margin */
+  }
+  

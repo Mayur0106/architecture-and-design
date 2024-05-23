@@ -1,0 +1,32 @@
+.fullscreen-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .responsive-image {
+    
+    max-width: 80%;
+     max-height: 20%; 
+    /* height: auto; */
+  }
+  
+  button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* .lallan{
+    background-color: #7d2b2b;
+  
+  } */

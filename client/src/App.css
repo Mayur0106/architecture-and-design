@@ -1,0 +1,36 @@
+/* client/src/index.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects a {
+  flex: 1 1 calc(33.333% - 1em);
+  margin: 0.5em;
+  text-decoration: none;
+  color: inherit;
+  background: #f4f4f4;
+  padding: 1em;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.projects a:hover {
+  background: #e2e2e2;
+}
+
+@media (max-width: 768px) {
+  .projects a {
+    flex: 1 1 calc(50% - 1em);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects a {
+    flex: 1 1 100%;
+  }
+}
