@@ -11,6 +11,7 @@ function Form() {
   });
 
   const [successMessage, setSuccessMessage] = useState('');
+  const [loading, setLoading] = useState(false); // State for loading spinner
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,8 +23,16 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Start loading spinner
+
     try {
-      const response = await axios.post('https://architecture-and-design.onrender.com/api/auth/createCard', formData);
+
+      const apiUrl = `${process.env.REACT_APP_API_KEY}/api/auth/createCard`;
+      const res = await axios.post(apiUrl,formData);
+
+      console.log(res);
+        console.log("success");
+
       setSuccessMessage('Details saved successfully!');
       setFormData({
         name: '',
@@ -31,14 +40,15 @@ function Form() {
         address: '',
         email: ''
       });
-
-      setTimeout(() => {
-        setSuccessMessage('');
-      }, 15000);
     } catch (error) {
       setSuccessMessage('Failed');
       console.error('Error uploading data:', error);
     }
+
+    setLoading(false); // Stop loading spinner after API call completes
+    setTimeout(() => {
+      setSuccessMessage('');
+    }, 3000); // Adjust timing as per your preference
   };
 
   return (
@@ -62,7 +72,13 @@ function Form() {
           <input type="text" name="email" value={formData.email} onChange={handleChange} className="input-field" />
         </label>
         <div className="submit-button-container">
-          <button type="submit" className="submit-button">Upload</button>
+          <button type="submit" className={`submit-button ${loading ? 'opacity-50 pointer-events-none' : ''}`}>
+            {loading ? (
+              <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-gray-900 mx-auto"></div>
+            ) : (
+              'Upload'
+            )}
+          </button>
         </div>
         {successMessage && (
           <div className="success-message">
