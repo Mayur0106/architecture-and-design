@@ -13,7 +13,7 @@ function ConstactInfo() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/getCard');
+      const response = await axios.get('https://architecture-and-design.onrender.com/api/auth/getCard');
       setCards(response.data.data); // Set cards to response.data.data
     } catch (error) {
       console.error('Error fetching data:', error);
