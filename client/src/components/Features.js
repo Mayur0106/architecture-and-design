@@ -3,11 +3,11 @@ import './Features.css';
 
 const Features = () => {
 
-    const handleClick = (title, description, imageUrl) => {
+    const handleClick = (title) => {
         // Encode image URL to make sure it's URL safe
-        const encodedImageUrl = encodeURIComponent(imageUrl);
+       // const encodedImageUrl = encodeURIComponent(imageUrl);
         // Redirect to a new page with the image URL, title, and description as parameters
-        window.location.href = `/FullscreenPage?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&imageUrl=${encodedImageUrl}`;
+        window.location.href = `/FullscreenPage?title=${encodeURIComponent(title)}`;
     };
 
     const str = "Architectural design in product development focuses on creating functional, aesthetically pleasing, and user-centric products. It involves a comprehensive understanding of materials, ergonomics, and user experience to craft products that seamlessly integrate form and function. The process starts with conceptual sketches and evolves through detailed drawings and prototypes. Architects ensure that every design element serves a purpose, enhancing the product's usability and appeal. Sustainable practices are often employed to minimize environmental impact. Collaboration with engineers and marketers ensures the product meets technical specifications and market demands. Ultimately, architectural design bridges the gap between innovative ideas and practical, market-ready solutions.";
@@ -32,7 +32,7 @@ const Features = () => {
                     <div
                         key={index}
                         className="card"
-                        onClick={() => handleClick(card.title, str, card.imageUrl)}
+                        onClick={() => handleClick(card.title)}
                     >
                         <img src={card.imageUrl} alt={`Image ${index + 1}`} className="card-image" />
                         <div className="card-text">
