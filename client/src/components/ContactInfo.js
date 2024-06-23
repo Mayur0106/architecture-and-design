@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './ConstactInfo.css'; // Import CSS for styling

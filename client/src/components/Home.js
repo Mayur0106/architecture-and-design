@@ -12,7 +12,11 @@ function Home() {
 
       </div>
       <Card />
+      <Link to="/Form">
+        <button>Contact Us</button>
+      </Link>
     </div>
+    
 
   );
 }
