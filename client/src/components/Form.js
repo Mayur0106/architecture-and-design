@@ -23,7 +23,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/createCard', formData);
+      const response = await axios.post('https://architecture-and-design.onrender.com/api/auth/createCard', formData);
       setSuccessMessage('Details saved successfully!');
       setFormData({
         name: '',
@@ -49,28 +49,26 @@ function Form() {
           Name:
           <input type="text" name="name" value={formData.name} onChange={handleChange} className="input-field" />
         </label>
-        <br />
         <label>
           Phone Number:
           <input type="text" name="phone_number" value={formData.phone_number} onChange={handleChange} className="input-field" />
         </label>
-        <br />
         <label>
           Address:
           <input type="text" name="address" value={formData.address} onChange={handleChange} className="input-field" />
         </label>
-        <br />
         <label>
           Email:
           <input type="text" name="email" value={formData.email} onChange={handleChange} className="input-field" />
         </label>
-        <br />
+        <div className="submit-button-container">
+          <button type="submit" className="submit-button">Upload</button>
+        </div>
         {successMessage && (
           <div className="success-message">
             {successMessage}
           </div>
         )}
-        <button type="submit" className="submit-button">Upload</button>
       </form>
     </div>
   );
