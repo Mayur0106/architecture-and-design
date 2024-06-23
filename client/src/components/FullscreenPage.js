@@ -7,14 +7,14 @@ const FullscreenPage = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const title = searchParams.get('title');
-  // const description = searchParams.get('description');
-  // const imageUrl = searchParams.get('imageUrl');
+  const description = searchParams.get('description');
+  const imageUrl = searchParams.get('imageUrl');
 
   return (
     <div className="fullscreen-container">
-     {/* <img src={imageUrl} alt={title} className="responsive-image" />    */}
-       <h1 >{title}</h1>
-      {/* <p>{description}</p>   */}
+      <img src={imageUrl} alt={title} className="responsive-image" />
+      <h1 >{title}</h1>
+      <p>{description}</p>
       <Link to="/Form">
         <button>Contact Us</button>
       </Link>
