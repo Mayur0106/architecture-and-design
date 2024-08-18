@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import ConstactInfo from './components/ContactInfo';
-import Form from './components/Form';
+import UploadForm from './components/UploadForm';
 import Header from './components/Header';
 import FullscreenPage from './components/FullscreenPage';
 
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/FullscreenPage" element={<FullscreenPage />} />
-        <Route path="/Form" element={<Form />} />
+        <Route path="/UploadForm" element={<UploadForm />} />
         <Route path="/ConstactInfo" element={<ConstactInfo/>} />
        
         

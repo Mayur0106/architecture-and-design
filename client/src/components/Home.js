@@ -3,17 +3,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Cards';
 import './Home.css'
+import PhotoSlider from './PhotoSlider';
+import "bootstrap/dist/css/bootstrap.css";
 function Home() {
   // Fetch projects from the server and display them
   return (
     <div>
-      <div className="centered-text-container">
+      {/* <div className="centered-text-container">
         <h1 className="centered-text">Architecture Design</h1>
 
-      </div>
+
+      </div> */}
+      <div className=''>
+            <PhotoSlider />
+        </div>
+
       <Card />
-      <Link to="/Form">
-        <button>Contact Us</button>
+      <Link to="/UploadForm">
+        {/* <button>Contact Us....</button> */}
+
+        <span>Contact Us</span>
       </Link>
     </div>
     

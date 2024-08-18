@@ -15,7 +15,7 @@ const FullscreenPage = () => {
       <img src={imageUrl} alt={title} className="responsive-image" />
       <h1 >{title}</h1>
       <p>{description}</p>
-      <Link to="/Form">
+      <Link to="/UploadForm">
         <button>Contact Us</button>
       </Link>
     </div>

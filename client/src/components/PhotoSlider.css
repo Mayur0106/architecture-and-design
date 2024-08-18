@@ -1,0 +1,52 @@
+.photo-slider-container {
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0; /* Remove any padding */
+    overflow: hidden; /* Hide any overflow */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any box shadow */
+}
+
+.carousel {
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any box shadow */
+}
+
+.carousel-inner {
+    border: none; /* Remove any border */
+}
+
+.carousel-item {
+    border: none; /* Remove any border */
+}
+
+.carousel-image {
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the carousel area */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    border-radius: 5px; /* Rounded corners for the caption background */
+    bottom: 20px; /* Adjust the position of the caption */
+}
+
+/* Reset styles for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+
+
+.carousel-indicators button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color as needed */
+    width: 1px; /* Adjust size if needed */
+    height: 1px; /* Adjust size if needed */
+}
