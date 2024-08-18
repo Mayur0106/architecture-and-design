@@ -1,0 +1,34 @@
+.footer {
+    background-color: #343a40; /* Dark background for the footer */
+     /* Adjust padding to control height */
+}
+
+.footer .container {
+    padding: 0; /* Remove container padding */
+}
+
+.footer h5 {
+    margin-bottom: 1rem; /* Space below headings */
+}
+
+.footer p {
+    margin-bottom: 0; /* Remove extra margin at the bottom of paragraphs */
+}
+
+.footer a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.footer .bi {
+    margin-right: 8px; /* Spacing between icon and text */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.footer .bi-geo-alt {
+    font-size: 1.2em; /* Adjust icon size */
+}

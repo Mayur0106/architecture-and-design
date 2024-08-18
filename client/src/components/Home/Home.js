@@ -1,7 +1,8 @@
 // client/src/components/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from './Cards';
+import Card from '../Feature/Cards';
+import Footer from './Footer';
 import './Home.css'
 import PhotoSlider from './PhotoSlider';
 import "bootstrap/dist/css/bootstrap.css";
@@ -19,10 +20,11 @@ function Home() {
         </div>
 
       <Card />
+      <Footer/>
       <Link to="/UploadForm">
-        {/* <button>Contact Us....</button> */}
+        {/* <button>Contact Us</button> */}
 
-        <span>Contact Us</span>
+        {/* <span>Contact Us</span> */}
       </Link>
     </div>
     
